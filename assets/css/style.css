@@ -1,0 +1,38 @@
+/* remember to design for mobile, but flex for desktop */
+
+body {
+    background-color: rgb(220, 220, 220);
+}
+
+.header {
+    padding: 20px;
+    height: 30px;
+    font-family: "proxima nova","times new roman",serif;
+    color: aliceblue;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.nav {
+    
+    /* maybe add media query to change nav layout for size */
+}
+
+.nav ul {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav ul li {
+    margin-left: 15px;
+    list-style: none;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
