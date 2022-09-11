@@ -67,12 +67,40 @@ a:hover {
 }
 
 /* Main begin */
-.about-me-header {
+h2 {
     float: left;
     padding-left: 5%;
-    border-right: 1px solid;
+    margin-bottom: 1%;
+    clear: both;
 }
 
-.about-me-paragraph {
-    
+section {
+    border-left: 1px solid;
+    padding-left: 5%;
+    margin-bottom: 1%;
+}
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    width: 75%;
+}
+
+.image-box {
+    background-color: darkmagenta;
+}
+
+.work1 {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    width: 75%;
+}
+
+.contact-me {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    width: 75%;
 }
