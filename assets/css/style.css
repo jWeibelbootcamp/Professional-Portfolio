@@ -2,20 +2,21 @@
     box-sizing: border-box;
     padding: .5%;
     margin: 0%;
+    color: aliceblue;
+    font-family: "proxima nova","times new roman",serif;
 }
 
 body {
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(32, 10, 96);
 }
+
 /* Header and Nav begin */
 .header {
     background-color: rgb(32, 32, 32);
     border-style: solid;
     border-width: 4px;
-    border-color: rgb(58, 58, 58);
+    border-color: rgb(149, 38, 132);
     padding-bottom: 0;
-    font-family: "proxima nova","times new roman",serif;
-    color: aliceblue;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -26,12 +27,13 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    /* width? */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .header nav ul li {
     float: right;
-    border-right: 1px solid ;
+    border-right: 1px solid;
 }
 
 .header nav ul li:last-child {
@@ -40,7 +42,6 @@ body {
 
 a {
     display: block;
-    color: aliceblue;
     text-decoration: none;
     padding: 5px;
 }
@@ -58,6 +59,20 @@ a:hover {
 
 /* Banner image begin*/
 .sunset {
-    background-image: url("Professional-Portfolio/assets/images/Sunset.gif");
-    padding-top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("./images/Sunset.gif");
+    background-position: center;
+    padding: 0;
+}
+
+/* Main begin */
+.about-me-header {
+    float: left;
+    padding-left: 5%;
+    border-right: 1px solid;
+}
+
+.about-me-paragraph {
+    
 }
