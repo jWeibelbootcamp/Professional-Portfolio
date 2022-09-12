@@ -23,10 +23,16 @@ body {
     align-items: center;
 }
 
+/* try messing with width and flex-wrap:nowrap on li */
+.header nav {
+    display: ;
+}
+
 .header nav ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    width: fit-content ;
 }
 
 .header nav ul li {
@@ -47,15 +53,8 @@ a:hover {
     background-color: rgba(0, 206, 209, 0.659);
 }
 
-/* need to get this working for header and nav bar */
-@media screen and (max-width: 600px) {
-    .header {
-        padding: 30px;
-    }
-}
-
 /* Banner image begin*/
-.sunset {
+#sunset {
     height: 100%;
     width: 100%;
     background-image: url("./images/Sunset.gif");
@@ -73,31 +72,35 @@ h2 {
 
 section {
     border-left: 1px solid;
-    padding-left: 5%;
+    padding-left: 3%;
     margin-bottom: 1%;
 }
 
-/* About Me begin */
-.about-me {
-    display: flex;
-    flex-wrap: wrap;
-    float: right;
-    width: 75%;
+p {
+    text-align: justify;
 }
 
 .image-box {
     background-color: darkmagenta;
 }
 
-/* Work begin */
-.work1 {
+/* About Me begin */
+#about-me {
     display: flex;
     flex-wrap: wrap;
     float: right;
-    width: 75%;
+    width: 80%;
+    }
+
+/* Work begin */
+#work1 {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    width: 80%;
 }
 
-.work2, .work3, .work4, .work5 {
+#work2, #work3, #work4, #work5 {
     width: 50%;
     object-fit: contain;
 }
@@ -107,9 +110,19 @@ section {
 }
 
 /* Contact Me begin */
-.contact-me {
+#contact-me {
     display: flex;
     flex-wrap: wrap;
     float: right;
-    width: 75%;
+    width: 80%;
 }
+
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    main {
+      max-width: 1200px;
+    }
+  }
