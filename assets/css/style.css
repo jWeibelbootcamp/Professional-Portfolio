@@ -12,11 +12,11 @@ body {
 
 /* Header and Nav begin */
 .header {
-    background-color: rgb(32, 32, 32);
+    background-color: rgba(139, 0, 139, 0.714);
     border-style: solid;
     border-width: 4px;
-    border-color: rgb(149, 38, 132);
-    padding-bottom: 0;
+    border-color: rgba(74, 0, 139, 0.56);
+    padding-left: 3%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -25,14 +25,11 @@ body {
 
 .header nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
 }
 
 .header nav ul li {
-    float: right;
     border-right: 1px solid;
 }
 
@@ -47,7 +44,7 @@ a {
 }
 
 a:hover {
-    background-color:black;
+    background-color: rgba(0, 206, 209, 0.659);
 }
 
 /* need to get this working for header and nav bar */
@@ -80,6 +77,7 @@ section {
     margin-bottom: 1%;
 }
 
+/* About Me begin */
 .about-me {
     display: flex;
     flex-wrap: wrap;
@@ -91,6 +89,7 @@ section {
     background-color: darkmagenta;
 }
 
+/* Work begin */
 .work1 {
     display: flex;
     flex-wrap: wrap;
@@ -98,6 +97,16 @@ section {
     width: 75%;
 }
 
+.work2, .work3, .work4, .work5 {
+    width: 50%;
+    object-fit: contain;
+}
+
+#work1-text, #work2-text, #work3-text, #work4-text, #work5-text {
+    background-color: darkmagenta;
+}
+
+/* Contact Me begin */
 .contact-me {
     display: flex;
     flex-wrap: wrap;
