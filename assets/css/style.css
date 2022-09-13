@@ -120,6 +120,7 @@ p {
 
 #work1-text, #work2-text, #work3-text, #work4-text, #work5-text {
     background-color: rgba(139, 0, 139, 0.714);
+    padding-left: 10px;
     border: 1px solid;
     border-color: darkmagenta;
 }
