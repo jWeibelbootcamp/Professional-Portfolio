@@ -16,23 +16,41 @@ body {
     border-style: solid;
     border-width: 4px;
     border-color: rgba(74, 0, 139, 0.56);
-    padding-left: 3%;
+    padding-left: 2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
+.header div {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    padding-left: 4%;
+}
+
+#portrait {
+    height: 70px;
+    object-fit: contain;
+    padding: 0;
+    border: 3px solid;
+    border-radius: 50%;
+    border-color: darkmagenta;
+}    
+
 /* Navbar begin */
 nav ul {
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
-    width: fit-content ;
+    
 }
 
 nav ul li {
     border-right: 1px solid;
+    font-size: 13pt;
 }
 
 nav ul li:last-child {
@@ -53,7 +71,6 @@ a:hover {
     height: 100%;
     width: 100%;
     background-image: url("./images/Sunset.gif");
-    background-position: center;
     padding: 0;
 }
 
@@ -109,6 +126,8 @@ p {
 #contact-me {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-decoration: underline;
     float: right;
     width: 80%;
 }
